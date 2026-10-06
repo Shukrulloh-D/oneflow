@@ -1,0 +1,16 @@
+.page-stub {
+  padding: calc(var(--header-h) + 96px) 0 160px;
+  background: var(--pink);
+  color: var(--teal);
+  text-align: center;
+}
+
+.page-stub__title {
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 500;
+}
+
+.page-stub__text {
+  margin-top: 16px;
+  font-size: 18px;
+}

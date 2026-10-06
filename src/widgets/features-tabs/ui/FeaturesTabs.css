@@ -1,0 +1,31 @@
+.features-tabs {
+  padding: 0 0 128px;
+  background: var(--teal);
+}
+
+.features-tabs__panel {
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--blue-panel);
+}
+
+.features-tabs__content {
+  padding: 72px 96px 80px;
+  min-height: 460px;
+}
+
+@media (max-width: 1023px) {
+  .features-tabs {
+    padding-bottom: 80px;
+  }
+  .features-tabs__content {
+    padding: 48px 40px;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 639px) {
+  .features-tabs__content {
+    padding: 32px 20px 36px;
+  }
+}

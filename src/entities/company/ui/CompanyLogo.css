@@ -1,0 +1,6 @@
+.company-logo {
+  height: 30px;
+  width: auto;
+  max-width: 130px;
+  object-fit: contain;
+}

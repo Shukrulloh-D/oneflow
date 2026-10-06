@@ -1,0 +1,27 @@
+.more {
+  padding: 40px 0 96px;
+  background: #fff;
+}
+
+.more__title {
+  font-family: var(--font-alt);
+  font-size: clamp(26px, 2.8vw, 32px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.more__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-top: 28px;
+}
+
+@media (max-width: 639px) {
+  .more {
+    padding-bottom: 64px;
+  }
+  .more__grid {
+    grid-template-columns: 1fr;
+  }
+}

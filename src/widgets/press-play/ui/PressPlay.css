@@ -1,0 +1,36 @@
+.press-play {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  aspect-ratio: 1440 / 814;
+  min-height: 360px;
+  overflow: hidden;
+  background-color: var(--pink);
+  background-position: center;
+  background-size: cover;
+}
+
+.press-play__title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 5.5% 3%;
+  font-size: clamp(56px, 15.5vw, 224px);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  color: #fff;
+  pointer-events: none;
+}
+
+.press-play__button {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+.press-play__button:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
