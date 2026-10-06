@@ -1,1 +1,0 @@
-export { LoveInAllWays } from './LoveInAllWays';
