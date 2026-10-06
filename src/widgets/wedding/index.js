@@ -1,0 +1,1 @@
+export { Wedding } from './Wedding';

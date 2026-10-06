@@ -1,0 +1,1 @@
+export { OurJewelry } from './OurJewelry';
