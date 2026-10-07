@@ -1,10 +1,10 @@
-## 📋 About Project
+## 📋 About Project RU
 
-Учебное задание по фронтенд-разработке. Задача — сверстать макет из Figma: <a href="https://www.figma.com/design/DQ6F2KLrUiA3WjWL5OZ9FO/Portfolio-Creator--Copy-" target="_blank">Portfolio Creator</a>.
+Учебное задание по фронтенд-разработке. Задача — сверстать макет из Figma: <a href="https://www.figma.com/design/HZaauAwFBCowxPkwGw3vSg/Oneflow----Copy-?node-id=0-1&p=f&t=sCzmRlGTnPrLgU5l-0" target="_blank">OneFlow</a>.
 
 **Цель проекта:** отработать навыки вёрстки и работы с React — сборка компонентов, работа с состоянием (аккордеон, слайдеры, бургер-меню), адаптивная сетка, hover-эффекты и плавный скролл по якорям.
 
-## About Project
+## 📋 About Project EN
 
 Seamless integrations — white background; "Seamless integrations" heading, short text, and a yellow button on the left; a scattered grid of integration logos on the right (Salesforce, HubSpot, Microsoft Teams, Dynamics, etc. — verify against layout), with each logo on a white background (with or without a drop shadow).
 
