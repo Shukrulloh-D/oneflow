@@ -1,4 +1,29 @@
-## About Project
+## 📋 About Project
+
+Учебное задание по фронтенд-разработке. Задача — сверстать макет из Figma: <a href="https://www.figma.com/design/DQ6F2KLrUiA3WjWL5OZ9FO/Portfolio-Creator--Copy-" target="_blank">Portfolio Creator</a>.
+
+**Цель проекта:** отработать навыки вёрстки и работы с React — сборка компонентов, работа с состоянием (аккордеон, слайдеры, бургер-меню), адаптивная сетка, hover-эффекты и плавный скролл по якорям.
+
+## 🛠 Стек технологий
+
+- **React 18** — библиотека для построения интерфейсов
+- **Vite** — сборщик и dev-сервер (быстрый запуск, HMR)
+- **CSS** — обычные CSS-файлы рядом с компонентами, без препроцессоров
+- **Google Fonts** — шрифт Inter
+
+## 🚀 Как запустить
+
+Понадобится Node.js версии 18 или выше.
+
+```bash
+# 1. Установить зависимости
+npm install
+
+# 2. Запустить dev-сервер
+npm run dev
+
+# 3. Открыть в браузере
+# http://localhost:5173
 
 Seamless integrations — white background; "Seamless integrations" heading, short text, and a yellow button on the left; a scattered grid of integration logos on the right (Salesforce, HubSpot, Microsoft Teams, Dynamics, etc. — verify against layout), with each logo on a white background (with or without a drop shadow).
 
