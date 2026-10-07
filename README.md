@@ -16,7 +16,7 @@ More from Oneflow — heading on the left; two cards in a row; card: large image
 
 # Responsiveness
 
-# Desktop — two-column hero section (text + photo); "Smart contracts," "Believe your eyes," and "Seamless integrations" sections in two columns; six tabs in a row; platform features arranged in a checkerboard pattern; testimonial slider showing ~3.5 cards; resources section with a featured card + 3 cards in a row; "More from Oneflow" in 2 columns; footer with 4–5 columns of links.
+Desktop — two-column hero section (text + photo); "Smart contracts," "Believe your eyes," and "Seamless integrations" sections in two columns; six tabs in a row; platform features arranged in a checkerboard pattern; testimonial slider showing ~3.5 cards; resources section with a featured card + 3 cards in a row; "More from Oneflow" in 2 columns; footer with 4–5 columns of links.
 
 Tablet — menu collapses into a hamburger icon;  Hero and two-column sections stack vertically (image below text) or the image scales down; client logos arrange into two rows; tabs scroll horizontally; platform features stack into a single column; testimonial slider displays two cards; resource cards arrange into two columns; footer columns form a three-column grid.
 
