@@ -5,7 +5,6 @@
   right: 0;
   z-index: 100;
   background: #fff;
-  /* когда страница прокручена, шапка становится полупрозрачной (работает без JS) */
   animation: header-scroll linear both;
   animation-timeline: scroll();
   animation-range: 0 120px;
@@ -18,7 +17,7 @@
   }
 }
 
-.header__bar {
+.header-bar {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -28,7 +27,7 @@
   padding: 0 48px;
 }
 
-.header__logo {
+.header-logo {
   display: block;
   height: 32px;
 }
@@ -41,25 +40,25 @@
   margin-left: auto;
 }
 
-.nav__list {
+.nav-list {
   display: flex;
   gap: 40px;
 }
 
-.nav__item {
+.nav-item {
   position: relative;
 }
 
-.nav__item > a {
+.nav-item > a {
   display: block;
   padding: 8px 0;
 }
 
-.nav__item > a:hover {
+.nav-item > a:hover {
   opacity: 0.65;
 }
 
-.nav__sub {
+.nav-sub {
   display: none;
   position: absolute;
   top: 100%;
@@ -71,21 +70,21 @@
   box-shadow: 0 12px 30px rgba(0, 55, 74, 0.18);
 }
 
-.nav__item:hover .nav__sub {
+.nav-item:hover .nav-sub {
   display: block;
 }
 
-.nav__sub a {
+.nav-sub a {
   display: block;
   padding: 10px 12px;
   border-radius: 4px;
 }
 
-.nav__sub a:hover {
+.nav-sub a:hover {
   background: var(--pink);
 }
 
-.nav__buttons {
+.nav-buttons {
   display: flex;
   gap: 12px;
 }
@@ -101,13 +100,12 @@
   cursor: pointer;
 }
 
-/* планшет и телефон */
 @media (max-width: 1023px) {
-  .header__bar {
+  .header-bar {
     padding: 0 20px;
   }
 
-  .header__bar .lang {
+  .header-bar .lang {
     margin-left: auto;
   }
 
@@ -135,18 +133,18 @@
     display: flex;
   }
 
-  .nav__list {
+  .nav-list {
     flex-direction: column;
     gap: 0;
   }
 
-  .nav__item > a {
+  .nav-item > a {
     padding: 14px 0;
     font-size: 20px;
     font-weight: 500;
   }
 
-  .nav__sub {
+  .nav-sub {
     display: block;
     position: static;
     min-width: 0;
@@ -154,7 +152,7 @@
     box-shadow: none;
   }
 
-  .nav__buttons {
+  .nav-buttons {
     flex-direction: column;
   }
 }

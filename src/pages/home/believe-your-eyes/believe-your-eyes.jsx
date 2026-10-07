@@ -4,13 +4,13 @@ import './believe-your-eyes.css'
 export function BelieveYourEyes() {
   return (
     <section className="believe" id="demo">
-      <div className="container">
-        <div className="believe__box">
-          <img className="believe__img" src="/images/believe.png" alt="" />
-
-          <div className="believe__content">
-            <h2 className="believe__title">Believe your eyes</h2>
-            <p className="believe__text">
+      <div className="believe-box">
+        <img className="believe-img" src="/images/believe.png" alt="" />
+        
+        <div className="believe-container">
+          <div className="believe-content">
+            <h2 className="believe-title">Believe your eyes</h2>
+            <p className="believe-text">
               Let us show you how to work smarter with contracts in Oneflow.
             </p>
             <Button size="sm">Get a demo</Button>

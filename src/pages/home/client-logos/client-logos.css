@@ -4,13 +4,13 @@
   color: #fff;
 }
 
-.client-logos__title {
+.client-logos-title {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
 }
 
-.client-logos__list {
+.client-logos-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -20,7 +20,7 @@
   margin: 28px auto 0;
 }
 
-.client-logos__list img {
+.client-logos-list img {
   height: 30px;
   width: auto;
   max-width: 130px;
@@ -29,18 +29,18 @@
 
 /* телефон: логотипы по 2 в ряд */
 @media (max-width: 639px) {
-  .client-logos__title {
+  .client-logos-title {
     font-size: 16px;
   }
 
-  .client-logos__list {
+  .client-logos-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 24px;
   }
 
-  .client-logos__list img:last-child {
+  .client-logos-list img:last-child {
     grid-column: 1 / -1;
   }
 }

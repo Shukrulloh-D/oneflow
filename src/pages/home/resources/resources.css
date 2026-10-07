@@ -3,7 +3,7 @@
   background: #fff;
 }
 
-.resources__head {
+.resources-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,14 +11,14 @@
   margin-bottom: 32px;
 }
 
-.resources__title {
+.resources-title {
   font-family: var(--font-alt);
   font-size: clamp(26px, 2.8vw, 32px);
   font-weight: 700;
   line-height: 1.2;
 }
 
-.resources__grid {
+.resources-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
@@ -26,7 +26,7 @@
 }
 
 @media (max-width: 1023px) {
-  .resources__grid {
+  .resources-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -35,7 +35,7 @@
   .resources {
     padding: 48px 0;
   }
-  .resources__grid {
+  .resources-grid {
     grid-template-columns: 1fr;
   }
 }

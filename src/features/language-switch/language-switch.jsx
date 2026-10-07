@@ -7,7 +7,7 @@ export function LanguageSwitch() {
       <summary>
         <img src="/images/globe.svg" alt="Language" />
       </summary>
-      <ul className="lang__menu">
+      <ul className="lang-menu">
         <li>English</li>
         <li>Svenska</li>
       </ul>

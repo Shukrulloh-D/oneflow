@@ -4,14 +4,14 @@
   color: #fff;
 }
 
-.footer__top {
+.footer-top {
   display: grid;
   grid-template-columns: 1fr 2.4fr;
   gap: 48px;
   padding-bottom: 56px;
 }
 
-.footer__address {
+.footer-address {
   margin-top: 32px;
   font-size: 12px;
   font-style: normal;
@@ -19,37 +19,37 @@
   color: var(--text-muted-light);
 }
 
-.footer__cols {
+.footer-cols {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
-.footer__title {
+.footer-title {
   margin-bottom: 14px;
   font-size: 13px;
   font-weight: 600;
 }
 
-.footer__list {
+.footer-list {
   display: grid;
   gap: 10px;
   font-size: 13px;
   color: var(--text-muted-light);
 }
 
-.footer__list li,
-.footer__legal li {
+.footer-list li,
+.footer-legal li {
   cursor: pointer;
   transition: color 0.2s;
 }
 
-.footer__list li:hover,
-.footer__legal li:hover {
+.footer-list li:hover,
+.footer-legal li:hover {
   color: #fff;
 }
 
-.footer__cta {
+.footer-cta {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,19 +58,19 @@
   border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.footer__cta-title {
+.footer-cta-title {
   font-size: 20px;
   font-weight: 600;
 }
 
-.footer__cta-text {
+.footer-cta-text {
   max-width: 340px;
   margin-top: 8px;
   font-size: 13px;
   color: var(--text-muted-light);
 }
 
-.footer__bottom {
+.footer-bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -78,7 +78,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.footer__legal {
+.footer-legal {
   display: flex;
   gap: 28px;
   font-size: 12px;
@@ -86,14 +86,14 @@
 }
 
 @media (max-width: 1023px) {
-  .footer__top {
+  .footer-top {
     grid-template-columns: 1fr;
   }
-  .footer__cols {
+  .footer-cols {
     grid-template-columns: repeat(3, 1fr);
     gap: 32px 24px;
   }
-  .footer__cta {
+  .footer-cta {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -103,24 +103,24 @@
   .footer {
     padding-top: 48px;
   }
-  .footer__cols {
+  .footer-cols {
     grid-template-columns: repeat(2, 1fr);
   }
-  .footer__cta {
+  .footer-cta {
     gap: 20px;
   }
-  .footer__bottom {
+  .footer-bottom {
     flex-wrap: wrap;
     gap: 12px;
   }
-  .footer__legal {
+  .footer-legal {
     flex-wrap: wrap;
     gap: 8px 20px;
   }
 }
 
-/* белый логотип и глобус на тёмном фоне */
-.footer__logo {
+/* Ну тут логотип канеш */
+.footer-logo {
   height: 32px;
   filter: brightness(0) invert(1);
 }
@@ -129,7 +129,7 @@
   filter: brightness(0) invert(1);
 }
 
-.footer .lang__menu {
+.footer .lang-menu {
   top: auto;
   bottom: calc(100% + 8px);
 }

@@ -1,7 +1,6 @@
 import { Button } from '@/shared/ui/button'
 import './platform-features.css'
 
-// align: где блок стоит на странице (шахматный порядок)
 const items = [
   {
     icon: '/images/friction.svg',
@@ -26,19 +25,19 @@ const items = [
 export function PlatformFeatures() {
   return (
     <section className="platform" id="platform">
-      <img className="platform__bg" src="/images/platform.png" alt="" />
+      <img className="platform-bg" src="/images/platform.png" alt="Hand" />
 
-      <div className="container platform__inner">
-        <h2 className="platform__title">The complete platform for smart contracts</h2>
+      <div className="container platform-inner">
+        <h2 className="platform-title">The complete platform for smart contracts</h2>
 
-        <div className="platform__items">
+        <div className="platform-items">
           {items.map((item) => (
-            <div className={`platform__item platform__item--${item.align}`} key={item.title}>
-              <span className="platform__icon">
-                <img src={item.icon} alt="" />
+            <div className={`platform-item platform-item--${item.align}`} key={item.title}>
+              <span className="platform-icon">
+                <img src={item.icon} alt="Icons" />
               </span>
-              <h3 className="platform__item-title">{item.title}</h3>
-              <p className="platform__item-text">{item.text}</p>
+              <h3 className="platform-item-title">{item.title}</h3>
+              <p className="platform-item-text">{item.text}</p>
               <Button color="dark" size="xs">
                 Take the tour
               </Button>

@@ -18,14 +18,14 @@ export function MoreFromOneflow() {
   return (
     <section className="more" id="more">
       <div className="container">
-        <h2 className="more__title">More from Oneflow</h2>
+        <h2 className="more-title">More from Oneflow</h2>
 
-        <div className="more__grid">
+        <div className="more-grid">
           {cards.map((card) => (
             <article className="promo-card" key={card.title}>
-              <img className="promo-card__img" src={card.image} alt="" />
-              <p className="promo-card__label">{card.label}</p>
-              <h3 className="promo-card__title">{card.title}</h3>
+              <img className="promo-card-img" src={card.image} alt="Картинки" />
+              <p className="promo-card-label">{card.label}</p>
+              <h3 className="promo-card-title">{card.title}</h3>
               <Button size="xs">Find out more</Button>
             </article>
           ))}

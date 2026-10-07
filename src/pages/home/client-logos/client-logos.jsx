@@ -4,9 +4,9 @@ export function ClientLogos() {
   return (
     <section className="client-logos">
       <div className="container">
-        <h2 className="client-logos__title">Join these companies making business flow</h2>
+        <h2 className="client-logos-title">Join these companies making business flow</h2>
 
-        <div className="client-logos__list">
+        <div className="client-logos-list">
           <img src="/images/apotea.png" alt="Apotea" />
           <img src="/images/tele2.png" alt="Tele2" />
           <img src="/images/dagens-industri.png" alt="Dagens industri" />
@@ -19,3 +19,4 @@ export function ClientLogos() {
     </section>
   )
 }
+  

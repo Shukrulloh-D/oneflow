@@ -4,14 +4,14 @@
   color: #fff;
 }
 
-.smart__inner {
+.smart-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 48px;
 }
 
-.smart__title {
+.smart-title {
   max-width: 420px;
   font-size: clamp(40px, 4.2vw, 60px);
   font-weight: 300;
@@ -19,13 +19,13 @@
   color: var(--pink);
 }
 
-.smart__text {
+.smart-text {
   max-width: 400px;
   margin: 28px 0 32px;
   font-size: 16px;
 }
 
-.smart__img {
+.smart-img {
   width: 100%;
   max-width: 501px;
   height: auto;
@@ -36,10 +36,10 @@
   .smart {
     padding-bottom: 80px;
   }
-  .smart__inner {
+  .smart-inner {
     grid-template-columns: 1fr;
   }
-  .smart__img {
+  .smart-img {
     margin: 0 auto;
   }
 }

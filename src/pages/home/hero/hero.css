@@ -8,7 +8,7 @@
 }
 
 /* картинка на весь фон секции */
-.hero__bg {
+.hero-bg {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -17,7 +17,7 @@
   object-position: center bottom;
 }
 
-.hero__content {
+.hero-content {
   position: relative;
   width: 100%;
   max-width: 1440px;
@@ -25,27 +25,27 @@
   padding: 0 144px;
 }
 
-.hero__title {
+.hero-title {
   font-size: clamp(48px, 5.6vw, 80px);
   font-weight: 500;
   line-height: 1.05;
 }
 
-.hero__text {
+.hero-text {
   max-width: 440px;
   margin-top: 28px;
   font-size: clamp(18px, 1.7vw, 24px);
   line-height: 1.35;
 }
 
-.hero__buttons {
+.hero-buttons {
   display: flex;
   gap: 16px;
   margin-top: 28px;
 }
 
 @media (max-width: 1279px) {
-  .hero__content {
+  .hero-content {
     padding: 0 48px;
   }
 }
@@ -57,7 +57,7 @@
     padding-top: calc(var(--header-h) + 56px);
   }
 
-  .hero__bg {
+  .hero-bg {
     object-position: 62% bottom;
   }
 }
@@ -67,11 +67,11 @@
     min-height: 680px;
   }
 
-  .hero__content {
+  .hero-content {
     padding: 0 20px;
   }
 
-  .hero__buttons {
+  .hero-buttons {
     flex-direction: column;
   }
 }

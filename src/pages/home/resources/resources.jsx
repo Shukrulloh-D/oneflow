@@ -35,14 +35,14 @@ export function Resources() {
   return (
     <section className="resources" id="resources">
       <div className="container">
-        <div className="resources__head">
-          <h2 className="resources__title">And for our next trick…</h2>
+        <div className="resources-head">
+          <h2 className="resources-title">And for our next trick…</h2>
           <Button size="xs">Visit our blog</Button>
         </div>
 
         <ResourceCard item={featured} />
 
-        <div className="resources__grid">
+        <div className="resources-grid">
           {cards.map((card) => (
             <ResourceCard key={card.title} item={card} />
           ))}

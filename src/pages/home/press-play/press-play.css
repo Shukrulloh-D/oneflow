@@ -7,7 +7,7 @@
   background: var(--pink);
 }
 
-.press-play__bg {
+.press-play-bg {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -15,8 +15,7 @@
   object-fit: cover;
 }
 
-/* огромные слова: размер зависит от ширины экрана (vw), поэтому влезают на телефоне */
-.press-play__title {
+.press-play-title {
   position: absolute;
   left: 5.5%;
   right: 5.5%;
@@ -31,7 +30,7 @@
   pointer-events: none;
 }
 
-/* круглая кнопка play */
+/*  кнопка play */
 .video summary {
   position: absolute;
   top: 46%;
@@ -74,7 +73,7 @@
   object-fit: contain;
 }
 
-/* когда видео открыто, кнопка становится крестиком в углу */
+/* кнопка икс нищон мета */
 .video[open] summary {
   top: 16px;
   left: auto;

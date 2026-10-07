@@ -3,14 +3,14 @@
   background: #fff;
 }
 
-.more__title {
+.more-title {
   font-family: var(--font-alt);
   font-size: clamp(26px, 2.8vw, 32px);
   font-weight: 700;
   line-height: 1.2;
 }
 
-.more__grid {
+.more-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
@@ -21,7 +21,7 @@
   .more {
     padding-bottom: 64px;
   }
-  .more__grid {
+  .more-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -32,7 +32,7 @@
   text-align: center;
 }
 
-.promo-card__img {
+.promo-card-img {
   width: 100%;
   aspect-ratio: 560 / 315;
   border-radius: var(--radius);
@@ -40,16 +40,16 @@
   transition: transform 0.35s;
 }
 
-.promo-card:hover .promo-card__img {
+.promo-card:hover .promo-card-img {
   transform: scale(1.02);
 }
 
-.promo-card__label {
+.promo-card-label {
   margin-top: 8px;
   font-size: 11px;
 }
 
-.promo-card__title {
+.promo-card-title {
   max-width: 380px;
   margin: 12px 0 20px;
   font-size: 20px;

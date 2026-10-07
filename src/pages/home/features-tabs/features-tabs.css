@@ -3,7 +3,6 @@
   background: var(--teal);
 }
 
-/* сетка: 6 кнопок вкладок в первой строке, под ними панели друг на друге */
 .tabs {
   position: relative;
   display: grid;
@@ -13,18 +12,17 @@
   background: var(--blue-panel);
 }
 
-/* .tab не рисуется, его дети лежат прямо в сетке */
 .tab {
   display: contents;
 }
 
-.tab__radio {
+.tab-radio {
   position: absolute;
   opacity: 0;
   pointer-events: none;
 }
 
-.tab__label {
+.tab-label {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -38,18 +36,17 @@
   transition: opacity 0.2s;
 }
 
-.tab__label img {
+.tab-label img {
   width: 20px;
   height: 20px;
 }
 
-.tab__label:hover,
-.tab__radio:checked + .tab__label {
+.tab-label:hover,
+.tab-radio:checked + .tab-label {
   opacity: 1;
 }
 
-/* линия под выбранной вкладкой */
-.tab__radio:checked + .tab__label::after {
+.tab-radio:checked + .tab-label::after {
   content: '';
   position: absolute;
   bottom: -1px;
@@ -60,13 +57,12 @@
   transform: translateX(-50%);
 }
 
-.tab__radio:focus-visible + .tab__label {
+.tab-radio:focus-visible + .tab-label {
   outline: 2px solid var(--magenta);
   outline-offset: -4px;
 }
 
-/* все панели в одной ячейке, видна только выбранная */
-.tab__panel {
+.tab-panel {
   grid-row: 2;
   grid-column: 1 / -1;
   display: grid;
@@ -81,37 +77,37 @@
     visibility 0.4s;
 }
 
-.tab__radio:checked ~ .tab__panel {
+.tab-radio:checked ~ .tab-panel {
   opacity: 1;
   visibility: visible;
 }
 
-.tab__title {
+.tab-title {
   font-size: 40px;
   font-weight: 700;
   line-height: 1.1;
 }
 
-.tab__text {
+.tab-text {
   max-width: 340px;
   margin-top: 16px;
   font-size: 18px;
 }
 
-.tab__points {
+.tab-points {
   display: grid;
   gap: 8px;
   margin: 40px 0;
   font-size: 14px;
 }
 
-.tab__points li {
+.tab-points li {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.tab__points li::before {
+.tab-points li::before {
   content: '✓';
   display: flex;
   align-items: center;
@@ -124,7 +120,7 @@
   color: #fff;
 }
 
-.tab__img {
+.tab-img {
   width: 100%;
   max-height: 340px;
   object-fit: contain;
@@ -135,23 +131,21 @@
     padding-bottom: 80px;
   }
 
-  .tab__panel {
+  .tab-panel {
     grid-template-columns: 1fr;
     padding: 48px 40px;
   }
 
-  .tab__title {
+  .tab-title {
     font-size: 32px;
   }
 }
-
-/* телефон: вкладки в 2 ряда по 3, панель под ними */
 @media (max-width: 639px) {
   .tabs {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .tab__panel {
+  .tab-panel {
     grid-row: 3;
     padding: 32px 20px 36px;
   }

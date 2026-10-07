@@ -26,7 +26,7 @@
   height: 22px;
 }
 
-.lang__menu {
+.lang-menu {
   position: absolute;
   right: 0;
   top: calc(100% + 8px);
@@ -39,12 +39,12 @@
   color: var(--teal);
 }
 
-.lang__menu li {
+.lang-menu li {
   padding: 8px 12px;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.lang__menu li:hover {
+.lang-menu li:hover {
   background: var(--pink);
 }

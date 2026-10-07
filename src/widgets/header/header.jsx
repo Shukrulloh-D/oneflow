@@ -3,7 +3,6 @@ import { Button } from '@/shared/ui/button'
 import { LanguageSwitch } from '@/features/language-switch/language-switch'
 import './header.css'
 
-// пункты меню. sub - выпадающий список на компьютере
 const menu = [
   {
     name: 'Why Oneflow?',
@@ -30,26 +29,25 @@ const menu = [
 ]
 
 export function Header() {
-  // открыто ли меню на телефоне
   const [open, setOpen] = useState(false)
 
   return (
     <header className="header">
-      <div className="header__bar">
+      <div className="header-bar">
         <a href="#top">
-          <img className="header__logo" src="/images/logo.svg" alt="Oneflow" />
+          <img className="header-logo" src="/images/logo.png" alt="Oneflow" />
         </a>
 
         <nav className={open ? 'nav nav--open' : 'nav'} onClick={() => setOpen(false)}>
-          <ul className="nav__list">
+          <ul className="nav-list">
             {menu.map((item) => (
-              <li className="nav__item" key={item.name}>
+              <li className="nav-item" key={item.name}>
                 <a href={item.href}>
                   {item.name}
                   {item.sub && ' ▾'}
                 </a>
                 {item.sub && (
-                  <ul className="nav__sub">
+                  <ul className="nav-sub">
                     {item.sub.map(([name, href]) => (
                       <li key={name}>
                         <a href={href}>{name}</a>
@@ -60,7 +58,7 @@ export function Header() {
               </li>
             ))}
           </ul>
-          <div className="nav__buttons">
+          <div className="nav-buttons">
             <Button size="sm">Get a demo</Button>
             <Button size="sm" color="outline">
               Log in

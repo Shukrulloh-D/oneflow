@@ -3,26 +3,26 @@
   background: #fff;
 }
 
-.integrations__inner {
+.integrations-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 48px;
 }
 
-.integrations__title {
+.integrations-title {
   font-size: clamp(32px, 3.2vw, 44px);
   font-weight: 600;
   line-height: 1.1;
 }
 
-.integrations__text {
+.integrations-text {
   max-width: 320px;
   margin: 16px 0 24px;
   font-size: 15px;
 }
 
-.integrations__grid {
+.integrations-grid {
   display: grid;
   grid-template-columns: repeat(3, 72px);
   grid-auto-rows: 72px;
@@ -86,23 +86,23 @@
 }
 
 @media (max-width: 1279px) {
-  .integrations__grid {
+  .integrations-grid {
     column-gap: 72px;
   }
 }
 
 /* планшет и телефон: обычная сетка без шахматного порядка */
 @media (max-width: 1023px) {
-  .integrations__inner {
+  .integrations-inner {
     grid-template-columns: 1fr;
   }
 
-  .integrations__grid {
+  .integrations-grid {
     grid-template-columns: repeat(4, 72px);
     gap: 24px;
   }
 
-  .integrations__grid .integration {
+  .integrations-grid .integration {
     grid-area: auto;
   }
 }
@@ -112,7 +112,7 @@
     padding: 56px 0;
   }
 
-  .integrations__grid {
+  .integrations-grid {
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: auto;
     gap: 14px;
