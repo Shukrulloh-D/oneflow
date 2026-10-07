@@ -10,7 +10,9 @@
   font: 500 16px/1 var(--font-main);
   white-space: nowrap;
   cursor: pointer;
-  transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
 }
 
 .btn--sm {
@@ -31,7 +33,6 @@
 }
 .btn--yellow:hover {
   background: var(--yellow-hover);
-  transform: translateY(-1px);
 }
 
 .btn--dark {
@@ -40,7 +41,6 @@
 }
 .btn--dark:hover {
   background: var(--teal-hover);
-  transform: translateY(-1px);
 }
 
 .btn--outline {
@@ -53,16 +53,8 @@
   color: #fff;
 }
 
-.btn--light {
-  background: #fff;
-  color: var(--teal);
-}
-.btn--light:hover {
-  background: var(--pink);
-}
-
 @media (max-width: 639px) {
-  .btn--block-mobile {
+  .btn--md {
     width: 100%;
   }
 }

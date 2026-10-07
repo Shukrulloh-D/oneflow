@@ -1,0 +1,138 @@
+.features-tabs {
+  padding: 0 0 128px;
+  background: var(--teal);
+}
+
+.features-tabs__panel {
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--blue-panel);
+}
+
+.features-tabs__content {
+  padding: 72px 96px 80px;
+  min-height: 460px;
+}
+
+@media (max-width: 1023px) {
+  .features-tabs {
+    padding-bottom: 80px;
+  }
+  .features-tabs__content {
+    padding: 48px 40px;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 639px) {
+  .features-tabs__content {
+    padding: 32px 20px 36px;
+  }
+}
+.tab-list {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 55, 74, 0.25);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.tab-list::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-list__tab {
+  position: relative;
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 110px;
+  padding: 24px 16px 20px;
+  border: 0;
+  background: transparent;
+  font-size: 14px;
+  color: var(--teal);
+  opacity: 0.75;
+  transition:
+    opacity 0.2s,
+    background-color 0.2s;
+}
+
+.tab-list__tab:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.tab-list__tab.is-active {
+  opacity: 1;
+}
+
+.tab-list__tab.is-active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 56px;
+  height: 2px;
+  background: var(--teal);
+  transform: translateX(-50%);
+}
+.tab-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 32px;
+  animation: tab-in 0.45s ease;
+}
+
+@keyframes tab-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.tab-panel__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.tab-panel__lead {
+  max-width: 340px;
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+.tab-panel__points {
+  display: grid;
+  gap: 8px;
+  margin: 40px 0;
+  font-size: 14px;
+}
+
+.tab-panel__points li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tab-panel__img {
+  width: 100%;
+  height: auto;
+  max-height: 340px;
+  object-fit: contain;
+}
+
+@media (max-width: 1023px) {
+  .tab-panel {
+    grid-template-columns: 1fr;
+  }
+  .tab-panel__title {
+    font-size: 32px;
+  }
+}

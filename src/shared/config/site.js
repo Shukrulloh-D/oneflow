@@ -1,6 +1,5 @@
-// Global constants of the site. TODO: confirm real URLs with the team.
+// links and address used on the site (TODO: check the real links)
 export const SITE = {
-  name: 'Oneflow',
   address: {
     title: 'Headquarters:',
     lines: ['Hudiksvallsgatan 8', '113 30 Stockholm, Sweden'],
@@ -11,6 +10,6 @@ export const SITE = {
     demo: 'https://oneflow.com/book-a-demo',
     login: 'https://app.oneflow.com/login',
   },
-  // Put your mp4 into /public/video/ with this name
+  // Put your mp4 in /public/video/ with this name
   videoSrc: '/video/oneflow-demo.mp4',
 }

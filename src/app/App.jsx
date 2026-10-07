@@ -1,6 +1,6 @@
-import { AppRouter } from './providers'
-import './styles/index.css'
+import { HomePage } from '@/pages/home/HomePage'
+import './global.css'
 
 export function App() {
-  return <AppRouter />
+  return <HomePage />
 }

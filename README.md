@@ -1,29 +1,23 @@
-# Oneflow landing (React + Vite + FSD)
+# Oneflow site (finished version)
 
-## Run
-npm install
-npm run dev        # http://localhost:5173
-npm run build      # check production build
+    npm install
+    npm run dev        open http://localhost:5173
+    npm run build      check that the build works
 
-## Images
-All images live in src/shared/assets/images/. The files there are 4x4 px placeholders.
-Replace each one with your Figma export (same file name). Video: public/video/oneflow-demo.mp4
+Images: `src/shared/images/` has tiny placeholder png files. Replace them with your Figma
+exports (same file names). Video: put `oneflow-demo.mp4` in the `public/video/` folder.
 
-## FSD layers (import only downwards)
-app -> pages -> widgets -> features -> entities -> shared
-- app       providers (router), global styles, entry component
-- pages     home, pricing, about, blog, not-found (pages only compose widgets)
-- widgets   big page blocks (header, hero, footer ...)
-- features  user actions (mobile menu, tabs switch, slider, subscribe form ...)
-- entities  business things (company, testimonial, resource, integration, product-tab, promo-card)
-- shared    ui kit, lib (helpers + hooks), config, api stub, assets
-Every slice has index.js (public API) and segments: ui / model / api / lib.
+## Folders
+    src/
+      app/         App.jsx and global.css (colors, fonts, .container)
+      pages/home/  HomePage.jsx, data.js, and sections/ (every section: .jsx + .css)
+      widgets/     header, footer          (big blocks, can be used on many pages)
+      features/    subscribe-form, language-switch    (one action of the user)
+      entities/    testimonial, resource             (a card and its data)
+      shared/      ui (Button, Logo, Icon), lib, config, images
 
-## Team split
-Lead:    app, shared, pages/home, widgets header, hero, features-tabs, press-play,
-         platform-features, testimonials; features mobile-menu, tabs-switch, slider, play-video;
-         entities product-tab, testimonial
-Partner: widgets client-logos, smart-contracts, believe-your-eyes, integrations, resources,
-         more-from-oneflow, footer; features request-demo, try-free, subscribe-form,
-         change-language; entities company, resource, integration, promo-card;
-         pages pricing, about, blog, not-found
+Rule: a folder can import only from the folders below it in this list:
+app > pages > widgets > features > entities > shared
+(for example shared never imports from widgets)
+
+`@` in imports means the `src` folder: `@/shared/ui/Button` = `src/shared/ui/Button`.

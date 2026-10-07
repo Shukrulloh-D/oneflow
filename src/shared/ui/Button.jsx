@@ -1,43 +1,27 @@
-import { Link } from 'react-router-dom'
-import { cn } from '../lib'
 import './Button.css'
 
-const isExternal = (href) => /^(https?:|mailto:|tel:)/.test(href)
+// variant: yellow | dark | outline      size: md | sm | xs
+// with href it is a link, without href it is a button
+export function Button({ variant = 'yellow', size = 'md', href, children, ...props }) {
+  const className = `btn btn--${variant} btn--${size}`
 
-// variant: yellow | dark | outline | light     size: md | sm | xs
-export function Button({
-  variant = 'yellow',
-  size = 'md',
-  href,
-  blockOnMobile = true,
-  className,
-  children,
-  ...props
-}) {
-  const classes = cn(
-    'btn',
-    `btn--${variant}`,
-    `btn--${size}`,
-    blockOnMobile && size === 'md' && 'btn--block-mobile',
-    className
-  )
-
-  if (href && isExternal(href)) {
+  if (href) {
+    const isExternal = href.startsWith('http')
     return (
-      <a className={classes} href={href} target="_blank" rel="noopener noreferrer" {...props}>
+      <a
+        className={className}
+        href={href}
+        target={isExternal ? '_blank' : undefined}
+        rel={isExternal ? 'noreferrer' : undefined}
+        {...props}
+      >
         {children}
       </a>
     )
   }
-  if (href) {
-    return (
-      <Link className={classes} to={href} {...props}>
-        {children}
-      </Link>
-    )
-  }
+
   return (
-    <button className={classes} type="button" {...props}>
+    <button className={className} type="button" {...props}>
       {children}
     </button>
   )

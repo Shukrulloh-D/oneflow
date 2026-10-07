@@ -1,0 +1,44 @@
+.subscribe {
+  width: 100%;
+  max-width: 460px;
+}
+
+.subscribe__row {
+  display: flex;
+  gap: 8px;
+}
+
+.subscribe__input {
+  flex: 1;
+  min-width: 0;
+  height: 38px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 14px;
+  color: var(--teal);
+}
+
+.subscribe__message {
+  min-height: 20px;
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--yellow);
+}
+
+@media (max-width: 639px) {
+  .subscribe__row {
+    flex-direction: column;
+  }
+
+  .subscribe__input {
+    flex: none;
+    height: 44px;
+  }
+
+  .subscribe .btn {
+    width: 100%;
+    height: 44px;
+  }
+}
