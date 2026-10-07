@@ -1,0 +1,30 @@
+.subscribe {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  max-width: 460px;
+}
+
+.subscribe__input {
+  flex: 1;
+  min-width: 0;
+  height: 38px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 14px;
+  color: var(--teal);
+}
+
+/* на телефоне поле и кнопка друг под другом */
+@media (max-width: 639px) {
+  .subscribe {
+    flex-direction: column;
+  }
+
+  .subscribe__input,
+  .subscribe .btn {
+    height: 44px;
+  }
+}

@@ -1,0 +1,47 @@
+.testimonials {
+  padding: 96px 0 72px;
+  background: #fff;
+}
+
+.testimonials__title {
+  margin-bottom: 32px;
+  font-family: var(--font-alt);
+  font-size: clamp(28px, 3.2vw, 36px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* карточки в один ряд. Листать можно мышкой, колёсиком или пальцем */
+.testimonials__track {
+  display: flex;
+  gap: 24px;
+  padding: 4px 0 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: var(--teal) transparent;
+}
+
+/* компьютер: видно 3.3 карточки */
+.testimonials__track > * {
+  flex: 0 0 calc((100% - 72px) / 3.3);
+  scroll-snap-align: start;
+}
+
+/* планшет: 2 карточки */
+@media (max-width: 1023px) {
+  .testimonials__track > * {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+/* телефон: 1 карточка и кусочек следующей */
+@media (max-width: 639px) {
+  .testimonials {
+    padding: 64px 0 48px;
+  }
+
+  .testimonials__track > * {
+    flex-basis: 85%;
+  }
+}

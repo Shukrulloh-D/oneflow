@@ -1,0 +1,160 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #fff;
+  /* когда страница прокручена, шапка становится полупрозрачной (работает без JS) */
+  animation: header-scroll linear both;
+  animation-timeline: scroll();
+  animation-range: 0 120px;
+}
+
+@keyframes header-scroll {
+  to {
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 2px 16px rgba(0, 55, 74, 0.15);
+  }
+}
+
+.header__bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 1440px;
+  height: var(--header-h);
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.header__logo {
+  display: block;
+  height: 32px;
+}
+
+/* меню */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-left: auto;
+}
+
+.nav__list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__item > a {
+  display: block;
+  padding: 8px 0;
+}
+
+.nav__item > a:hover {
+  opacity: 0.65;
+}
+
+.nav__sub {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -16px;
+  min-width: 220px;
+  padding: 8px;
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(0, 55, 74, 0.18);
+}
+
+.nav__item:hover .nav__sub {
+  display: block;
+}
+
+.nav__sub a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 4px;
+}
+
+.nav__sub a:hover {
+  background: var(--pink);
+}
+
+.nav__buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.burger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  font-size: 28px;
+  color: var(--teal);
+  cursor: pointer;
+}
+
+/* планшет и телефон */
+@media (max-width: 1023px) {
+  .header__bar {
+    padding: 0 20px;
+  }
+
+  .header__bar .lang {
+    margin-left: auto;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: var(--header-h);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    max-height: calc(100vh - var(--header-h));
+    margin: 0;
+    padding: 8px 20px 32px;
+    overflow-y: auto;
+    background: #fff;
+  }
+
+  .nav--open {
+    display: flex;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav__item > a {
+    padding: 14px 0;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .nav__sub {
+    display: block;
+    position: static;
+    min-width: 0;
+    padding: 0 0 8px 16px;
+    box-shadow: none;
+  }
+
+  .nav__buttons {
+    flex-direction: column;
+  }
+}

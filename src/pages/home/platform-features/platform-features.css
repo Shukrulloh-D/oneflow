@@ -1,0 +1,120 @@
+.platform {
+  position: relative;
+  padding: 72px 0 560px;
+  background: var(--pink);
+}
+
+.platform__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.platform__inner {
+  position: relative;
+}
+
+.platform__title {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: var(--font-alt);
+  font-size: clamp(36px, 4.4vw, 64px);
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.platform__items {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  margin-top: 200px;
+}
+
+.platform__item {
+  max-width: 340px;
+}
+
+.platform__item--right {
+  margin-left: 54%;
+}
+
+.platform__item--mid {
+  margin-left: 50%;
+}
+
+.platform__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.platform__icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.platform__item-title {
+  margin-top: 20px;
+  font-family: var(--font-alt);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.platform__item-text {
+  margin: 16px 0 24px;
+}
+
+/* на компьютере высота секции равна пропорции картинки */
+@media (min-width: 1024px) {
+  .platform {
+    aspect-ratio: 1440 / 2432;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .platform {
+    padding: 64px 0 400px;
+  }
+
+  .platform__items {
+    gap: 72px;
+    margin-top: 72px;
+  }
+
+  .platform__item--right,
+  .platform__item--mid {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 639px) {
+  .platform {
+    padding-bottom: 300px;
+  }
+
+  .platform__items {
+    gap: 56px;
+    margin-top: 48px;
+  }
+
+  .platform__item,
+  .platform__item--right,
+  .platform__item--mid {
+    max-width: none;
+    margin-left: 0;
+  }
+
+  .platform__item-title {
+    font-size: 32px;
+  }
+}
