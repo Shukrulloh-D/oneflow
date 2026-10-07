@@ -4,26 +4,6 @@
 
 **Цель проекта:** отработать навыки вёрстки и работы с React — сборка компонентов, работа с состоянием (аккордеон, слайдеры, бургер-меню), адаптивная сетка, hover-эффекты и плавный скролл по якорям.
 
-## 🛠 Стек технологий
-
-- **React 18** — библиотека для построения интерфейсов
-- **Vite** — сборщик и dev-сервер (быстрый запуск, HMR)
-- **CSS** — обычные CSS-файлы рядом с компонентами, без препроцессоров
-- **Google Fonts** — шрифт Inter
-
-## 🚀 Как запустить
-
-Понадобится Node.js версии 18 или выше.
-
-```bash
-# 1. Установить зависимости
-npm install
-
-# 2. Запустить dev-сервер
-npm run dev
-
-# 3. Открыть в браузере
-# http://localhost:5173
 ## About Project
 
 Seamless integrations — white background; "Seamless integrations" heading, short text, and a yellow button on the left; a scattered grid of integration logos on the right (Salesforce, HubSpot, Microsoft Teams, Dynamics, etc. — verify against layout), with each logo on a white background (with or without a drop shadow).
@@ -52,3 +32,24 @@ Modern, "warm" SaaS style: alternating sections of pastel pink, dark teal, and w
 
 # Implement based on the Figma mockup:
 [https://www.figma.com/design/HZaauAwFBCowxPkwGw3vSg/Oneflow----Copy-?node-id=0-1&p=f&t=sCzmRlGTnPrLgU5l-0](https://www.figma.com/design/HZaauAwFBCowxPkwGw3vSg/Oneflow----Copy-?node-id=0-1&p=f&t=sCzmRlGTnPrLgU5l-0)
+
+## 🛠 Стек технологий
+
+- **React 18** — библиотека для построения интерфейсов
+- **Vite** — сборщик и dev-сервер (быстрый запуск, HMR)
+- **CSS** — обычные CSS-файлы рядом с компонентами, без препроцессоров
+- **Google Fonts** — шрифт Inter
+
+## 🚀 Как запустить
+
+Понадобится Node.js версии 18 или выше.
+
+```bash
+# 1. Установить зависимости
+npm install
+
+# 2. Запустить dev-сервер
+npm run dev
+
+# 3. Открыть в браузере
+# http://localhost:5173
